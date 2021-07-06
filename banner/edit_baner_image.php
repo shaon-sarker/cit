@@ -4,7 +4,7 @@
 <?php
   require "../db.php";
   $id = $_GET['id'];
-  $sql = "SELECT * FROM `baner_images`WHERE id='$id'";
+  $sql = "SELECT * FROM baner_images WHERE id='$id'";
   $result = mysqli_query($db_conn, $sql); 
   $after_assoc = mysqli_fetch_assoc($result); 
 ?>
@@ -27,7 +27,7 @@
                             </div>
 
                                <div class="mb-3">
-                               <input type="file" class="form-control"name="user_image">
+                               <input type="file" class="form-control" name="user_image">
                             
                                </div>
 

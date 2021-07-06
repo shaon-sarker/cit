@@ -19,23 +19,13 @@ require "../dashboard_part/dashboard_header.php";
 
     <tr>
       <td scope="col">Name</td>
-      <td scope="col"><?php echo   $_SESSION['fname']; ?></td>  
+      <td scope="col"><?php echo   $_SESSION['uname']; ?></td>  
     </tr>
-
-    <tr>
-      <td scope="col">Last Name</td>
-      <td scope="col"><?php echo   $_SESSION['lname']; ?></td>  
-    </tr>
-
     <tr>
       <td scope="col">Email</td>
       <td scope="col"><?php echo  $_SESSION['email']; ?></td>  
     </tr>
 
-    <tr>
-      <td scope="col">Password</td>
-      <td scope="col"><?php echo $_SESSION['password']; ?></td>  
-    </tr>
 
     <tr>
       <td scope="col">Birth of date</td>

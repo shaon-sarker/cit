@@ -195,7 +195,8 @@
                                         <i class=""><img width="50" src="/cit/uploads/projects/<?= $project['project_img']; ?>" alt=""></i>
                                     </div>
                                     <div class="fact-content">
-                                        <h2><span class="count"><?=  $project['project_no']; ?></span></h2>
+                                    
+                                        <h2><span class="count"><?=  $project['project_no']; ?></span><?= ($project['id']==4)? 'k': '' ?></h2>
                                         <span><?=  $project['project_head']; ?></span>
                                     </div>
                                 </div>

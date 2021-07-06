@@ -1,8 +1,11 @@
 <?php 
+   // print_r($_FILES);
+   // die();
     session_start();
     require '../db.php';
 
-        $uploaded_file = $_FILES['baner_pic'];
+         $id = $_POST['id'];
+        $uploaded_file = $_FILES['user_image'];
         $after_explode = explode('.', $uploaded_file['name']);
         $extension = end($after_explode);
         $allowed_extension = array('jpg','jpeg','png','svg','gif');
